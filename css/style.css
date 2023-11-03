@@ -1,0 +1,443 @@
+/* Imports */
+/* Icons */
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Kaushan+Script&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #fff;
+  background: var(--color-primary);
+}
+a {
+  display: inline-block;
+  color: #000;
+  transition: all 300ms ease-in-out;
+}
+a:hover,
+a.active {
+  color: var(--color-primary);
+}
+i[class^="bx"] {
+  vertical-align: middle;
+}
+ul,
+address {
+  margin-bottom: 0;
+}
+.imgFluid {
+  max-width: 100%;
+}
+.primary-color {
+  color: var(--color-primary);
+}
+.section-content .subHeading {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.section-content .heading {
+  font-size: 3.25rem;
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section-content p {
+  color: #666;
+  line-height: 2;
+}
+.section-content span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.themelight {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: all .6s ease;
+}
+.themelight:hover {
+  background: #67C746;
+  border-color: #67C746;
+  color: #fff;
+}
+
+.themebtn {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  border: 1px solid #67C746;
+  background: #67C746;
+  padding: 12px 35px;
+  border-radius: 50px;
+  transition: all .6s ease;
+}
+.themebtn:hover {
+  background: transparent;
+  border-color: #67C746;
+  color: #67C746;
+}
+
+/********** Header Section Start ********/
+header.header-main {
+  position: absolute;
+  width: 100%;
+  padding: 30px 0px 20px 0px;
+}
+
+.header-logo img {
+  width: 210px;
+}
+
+
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.header-nav ul li a {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: all .6s ease;
+}
+.header-nav ul li a::before {
+  position: absolute;
+  content: "";
+  background: #67C746;
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  bottom: -2px;
+  border-radius: 20px;
+  transform: translate(-50%);
+  transition: all .6s ease;
+}
+
+.header-nav ul li a:hover:before {
+  width: 100%;
+}
+
+.header-nav ul li a:hover {
+  color: #67C746;
+}
+
+.header-nav {
+  height: 100%;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/********** Header Section End ********/
+
+
+
+/********** First Banner Section Start ********/
+.first-banner-sec{
+  background: url(../images/first-banner.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+  width: 100%;
+  padding: 180px 0px 80px 0px;
+}
+
+.first-banner-txt {
+  text-align: center;
+  padding: 50px 20px 0px 20px;
+}
+
+.first-banner-txt h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Kaushan Script;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80.385px; /* 122.981% */
+  text-transform: capitalize;
+}
+
+.first-banner-txt p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20.484px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: lowercase;
+  padding: 10px 0px 0px 0px;
+}
+
+
+
+/********** First Banner Section End ********/
+
+
+
+
+/********** Second Banner Section Start ********/
+.about-banner-img img {
+  width: 100%;
+  position: relative;
+}
+
+.about-banner-img {
+  padding: 40px 80px 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us-sec {
+  padding: 50px 0px;
+  position: relative;
+  margin-top: -70px;
+  background: white;
+  border-top-left-radius: 160px;
+}
+
+.about-us-sec::before {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 330px;
+  width: 100%;
+  top: -140px;
+  left: 0;
+  border-top-left-radius: 320px;
+  border: 1px solid white;
+  right: 0;
+}
+
+body {background: black;}
+
+
+.about-banner-first {
+  padding: 60px 160px 40px 20px;
+}
+
+.about-banner-first h3 {
+  color: #1E1F1F;
+  font-family: Raleway;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.about-banner-first p {
+  color: #1E1F1F;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.688px;
+}
+
+.about-banner-img::before {
+  position: absolute;
+  content: "";
+  background: #67C746;
+  width: 100%;
+  height: 650px;
+  left: 0;
+  border-radius: 80%;
+  top: 150px;
+  opacity: 0.2;
+}
+
+
+
+/********** Second Banner Section End ********/
+
+
+
+/********** Third Banner Section Start ********/
+
+
+.contact-banner-sec {
+  background: white;
+  padding: 50px 0px 0px 0px;
+  margin-bottom: -60px;
+}
+
+.contact-banner-txt {
+  background: linear-gradient(0deg, #67C746 0%, #67C746 100%), linear-gradient(220deg, #474747 4.14%, #222 44.22%);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.08);
+  padding: 50px 50px 50px 90px;
+}
+
+.ct-txt-main {
+  padding: 0px 80px 0px 0px;
+}
+
+.contact-banner-txt h3 {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80.633px;
+}
+
+.ct-detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0px;
+}
+
+.ct-icon {
+  border-radius: 50px;
+  background: #FAFCFE;
+  padding: 4px 12px;
+  font-size: 28px;
+  color: #67C746;
+  border: 1px solid #fff;
+  transition: all .6s ease;
+}
+
+.ct-icon:hover {
+  color: white;
+  border-color: white;
+  background: transparent;
+}
+
+.ct-detail-txt h6 {
+  margin: 0;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.ct-detail-txt p {
+  margin: 0;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 157.452%; /* 36.29px */
+  text-transform: capitalize;
+}
+
+.contact-map iframe {
+  height: 495px;
+  width: 100%;
+  border-top-left-radius: 130px;
+}
+
+.contact-map {height: 100%;width: 100%;padding: 0px 0px 0px 80px;}
+
+
+
+/********** Third Banner Section End ********/
+
+
+/********** footer Section Start ******/
+
+.footer-main{
+  background: url(../images/ft-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px 20px 0px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.footer-copyright p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+
+.footer-copyright {
+  padding: 10px 0px 10px 0px;
+  position: relative;
+  border-top: 1px solid #fff;
+  margin: 20px 0px 0px 0px;
+  border-style: dashed;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+}
+
+.footer-copyright::before {
+  position: absolute;
+  background: white;
+  top: 15px;
+}
+
+
+
+/********** footer Section End ******/
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1370px;
+  }
+}
